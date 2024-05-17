@@ -109,19 +109,19 @@ For example, using **`curl`**:
 1. **Check the existing products:**
 
 ```bash
-curl -X GET http://localhost:5000/api/products
+curl -X GET http://localhost:5006/api/products
 ```
 
 1. **Update a product:**
 
 ```bash
-curl -X PUT http://localhost:5000/api/products/1 -H "Content-Type: application/json" -d "{\"id\":1, \"name\":\"UpdatedProduct\", \"price\":15.0}"
+curl -X PUT http://localhost:5006/api/products/1 -H "Content-Type: application/json" -d "{\"id\":1, \"name\":\"UpdatedProduct\", \"price\":15.0}"
 ```
 
 1. **Verify the update:**
 
 ```bash
-curl -X GET http://localhost:5000/api/products/1
+curl -X GET http://localhost:5006/api/products/1
 ```
 
 This will show the updated product details.
